@@ -8,10 +8,19 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+app.get('/Page1', function (req, res) {
+  res.send('Page1 will be available here');
+});
+app.get('/Page2', function (req, res) {
+  res.send('Page2 will be available here');
+});
+app.get('/Page3', function (req, res) {
+  res.send('Page3 will be available here');
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
