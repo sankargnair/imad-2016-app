@@ -30,7 +30,7 @@ var submit1 =document.getElementById('submit_btn');
         }
     };
    
-   request.open('GET','http://sankargnair.imad.hasura-app.io/submit-name1?name='+name2,true);
+   request.open('GET','http://sankargnair.imad.hasura-app.io/submit-name?name='+name2,true);
    request.send(null);
 };
     
