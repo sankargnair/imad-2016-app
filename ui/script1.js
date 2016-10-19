@@ -27,7 +27,6 @@ var submit1 =document.getElementById('submit_btn');
     ul.innerHTML=list;
              }
          
-            
         }
     };
    
