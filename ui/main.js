@@ -10,7 +10,7 @@ button.onclick= function()
     
     //capture the response and store it
     
-    request.onreadystatechanged= function(){
+    request.onreadystatechange= function(){
           alert('hi');
         if (request.readyState==XMLHttpRequest.DONE)
         {
