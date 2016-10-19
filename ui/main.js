@@ -5,16 +5,24 @@ var counter=0;
 button.onclick= function()
 {
     //request to the counter 
-    
+    var request= new XMLHttpRequest();
     
     
     //capture the response and store it
     
-    
-    //render the variable in the span
-    counter=counter + 1;
-    //alert(counter);
-    var span=document.getElementById('count');
+    request.onreadystatechanged= function(){
+        if (request.readyState==XMLHttpRequest.DONE)
+        {
+            //Take some astion
+            if(request.status==200){
+                var counter=request.responseText;
+                 var span=document.getElementById('count');
     span.innerHTML= counter.toString();
+            }
+        }
+    };
+   
+   request.open('GET','http://sankargnair.imad.hasura-app.io/counter',true);
+   request.send(null);
 };
     
