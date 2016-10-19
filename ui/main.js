@@ -10,7 +10,9 @@ function moveRight(){
     marginLeft=marginLeft+5;
     img.style.marginLeft=marginLeft+ 'px';
 }
+
 var button=document.getElementById('counter');
+var counter=0;
 button onclick= function()
 {
     //request to the counter 
