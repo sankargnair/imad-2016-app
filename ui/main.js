@@ -10,3 +10,19 @@ function moveRight(){
     marginLeft=marginLeft+5;
     img.style.marginLeft=marginLeft+ 'px';
 }
+var button=document.getElementById('counter');
+button onclick= function()
+{
+    //request to the counter 
+    
+    
+    
+    //capture the response and store it
+    
+    
+    //render the variable in the span
+    counter=counter+1;
+    var span=document.getElementById('count');
+    span.innerHTML= counter.toString();
+}
+    
