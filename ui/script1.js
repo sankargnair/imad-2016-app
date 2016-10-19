@@ -26,7 +26,7 @@ var submit1 =document.getElementById('submit_btn');
     var ul = document.getElementById('namelist');
     ul.innerHTML=list;
              }
-            //Take some astion
+         
             
         }
     };
